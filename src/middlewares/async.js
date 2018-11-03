@@ -9,7 +9,7 @@ export default function({ dispatch }) {
 
     // Make sure the action's promise resolves
     action.payload
-      .then(function(response) => {
+      .then(function(response) {
         // create a new action with the old type, but
         // replace the promise with the response data
         const newAction = { ...action, payload: response };
